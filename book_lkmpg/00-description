@@ -1,0 +1,15 @@
+To load module 
+$ sudo insmod <module>.ko
+
+To unload module
+$ sudo rmmod <module>
+
+To verify if module was loaded
+$ lsmod | grep <module>
+
+hello-1.c - A simple module
+hello-2.c - A module skeleton
+hello-3.c - shows how to __init, __initdata and __exit macros works
+hello-4.c - Demonstrates module documentation
+hello-5.c - Demonstrates command line argument passing to a module
+  to load module passing args: sudo insmod hello-5.ko 5 mystring="bebop" myintarray=-1
